@@ -92,5 +92,5 @@ stages:
             displayName: 'Azure App Service Deploy: website'
             inputs:
               azureSubscription: 'SC-NIEKDEV'
-              appName: '$(WebAppNameDev)'
+              appName: '/subscriptions/78e358e0-e201-43b7-95c4-371dc14f44f6/resourceGroups/tailspin-space-game-rg/providers/Microsoft.Web/sites/$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
